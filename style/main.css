@@ -25,5 +25,20 @@
 
 /*导航*/
 .navBox{height: 35px; background-color: #1369C0; color: #FFF; }
-.shopClass{width: 190px; line-height: 35px;/*注意，有后患*/ }
-.shopClass i{width: 11px; height: 7px; overflow: hidden;background: url(../images/icon/down.jpg) left center no-repeat;/*no-repeat:不平铺*/ }
+.shopClass{width: 190px; position: relative;}
+.shopClass h3{text-align: center; line-height: 35px;}
+.shopClass i{width: 11px; height: 7px; overflow: hidden; background: url(../images/icon/down.png) left center no-repeat;/*no-repeat:不平铺*/  display: inline-block;/*内嵌不能给宽度高度*/ margin-left: 11px;}
+.nav .shopClass{font-family: "Microsoft YaHei","微软雅黑"; }
+.nav{line-height: 35px;}
+.nav li{float: left;}
+.nav a{height: 35px; display: inline-block; padding:0 35px; color: #FFF;}
+.nav .active{background-color: #4593FD; }
+
+/*商品弹出列表*/
+.shopClass_show{background-color: #4593FD; position: absolute; left:0; top:35px; width:100%; /*shopClass_show与shopClass绝对定位*/}
+.shopClass_item .b{/*font-family: "Microsoft YaHei","微软雅黑"; font-size:14px; font-weight:bold; */font:14px/1 "Microsoft YaHei","微软雅黑";}
+.shopClass_item a{color:#FFF;}
+.shopClass_item{padding: 14px 10px; border-bottom: #3487F2 solid 1px; border-top: 1px;}
+.shopClass_item dt{height: 22px; background: url(../images/icon/shop_sj.png) right center no-repeat;}
+.shopClass_item .aLink{width: 48px; height: 20px; background: url(../images/icon/aLink_bg.png) left center no-repeat; display: inline-block; text-align: center; line-height: 20px; text-decoration: underline;}
+
